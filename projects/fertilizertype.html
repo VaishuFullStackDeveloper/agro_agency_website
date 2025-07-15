@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fertilizers | Mayur Agro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4fff8;
+      color: #333;
+    }
+
+    .fertilizer-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .fertilizer-section h1 {
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 60px;
+      color: #2e7d32;
+    }
+
+    .fertilizer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .fertilizer-card {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0, 128, 0, 0.12);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .fertilizer-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0, 128, 0, 0.18);
+    }
+
+    .fertilizer-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      padding: 15px;
+      background-color: #f4fff8;
+      transition: transform 0.4s ease;
+    }
+
+    .fertilizer-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .fertilizer-card-content {
+      padding: 20px;
+    }
+
+    .fertilizer-card h3 {
+      font-size: 22px;
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+
+    .fertilizer-card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #4CAF50;
+      color: #fff;
+      padding: 10px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #2e7d32;
+    }
+
+    @media (max-width: 768px) {
+  .fertilizer-section {
+    padding: 40px 15px;
+  }
+
+  .fertilizer-section h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .fertilizer-card img {
+    height: 160px;
+    padding: 10px;
+  }
+
+  .fertilizer-card-content {
+    padding: 16px;
+  }
+
+  .fertilizer-card h3 {
+    font-size: 18px;
+  }
+
+  .fertilizer-card p {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fertilizer-section h1 {
+    font-size: 24px;
+  }
+
+  .fertilizer-card h3 {
+    font-size: 16px;
+  }
+
+  .fertilizer-card p {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 7px 18px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <section class="fertilizer-section">
+    <h1>🌿 Our Fertilizer Products</h1>
+    <div class="fertilizer-grid">
+
+      <div class="fertilizer-card">
+        <img src="https://gogarden.co.in/cdn/shop/files/71yg6hRnpTL._SL1200_fac2b8e7-208b-482d-9493-07d03daaff6f.jpg?v=1741858085" alt="Urea Fertilizer">
+        <div class="fertilizer-card-content">
+          <h3>Urea</h3>
+          <p>Highly concentrated nitrogen fertilizer for fast plant growth.</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="fertilizer-card">
+        <img src="https://m.media-amazon.com/images/I/51Ooks8QzOL.jpg" alt="DAP Fertilizer">
+        <div class="fertilizer-card-content">
+          <h3>DAP</h3>
+          <p>Di-Ammonium Phosphate for stronger root development.</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="fertilizer-card">
+        <img src="https://iplbiologicals.com/wp-content/uploads/2023/11/WhatsApp-Image-2024-07-03-at-12.12.35-PM.jpeg" alt="Potash Fertilizer">
+        <div class="fertilizer-card-content">
+          <h3>Potash</h3>
+          <p>Essential potassium nutrient to boost flowering & yield.</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="fertilizer-card">
+        <img src="https://gardengenie.in/wp-content/uploads/2023/11/Vermicompost-for-Home-Garden.webp" alt="Vermicompost">
+        <div class="fertilizer-card-content">
+          <h3>Vermicompost</h3>
+          <p>Organic fertilizer that improves soil health & fertility.</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="fertilizer-card">
+        <img src="https://cdn.moglix.com/p/qBL4fztqd7Thv.jpg" alt="NPK Combo">
+        <div class="fertilizer-card-content">
+          <h3>NPK Combo</h3>
+          <p>Balanced nutrients for all-round crop health & yield.</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="fertilizer-card">
+        <img src="https://vfpckonline.com/image/cache/catalog/A_OrganicInputs_3D/Dried%20cow%20Dung-800x800.jpg" alt="Cow Dung Fertilizer">
+        <div class="fertilizer-card-content">
+          <h3>Dry Cow Dung</h3>
+          <p>Natural traditional fertilizer for improving soil quality.</p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
