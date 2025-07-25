@@ -11,11 +11,11 @@
         let result = translate[selectLanguage];
       // header-section
 document.getElementById("logo").innerHTML = result.logo;
-document.getElementById("home").innerHTML = result.home;
-document.getElementById("about").innerHTML = result.about;
-document.getElementById("products").innerHTML = result.products;
-document.getElementById("services").innerHTML = result.services;
-document.getElementById("contact").innerHTML = result.contact;
+document.getElementById("home_1").innerHTML = result.home_1;
+document.getElementById("about_1").innerHTML = result.about_1;
+document.getElementById("products_1").innerHTML = result.products_1;
+document.getElementById("services_1").innerHTML = result.services_1;
+document.getElementById("contact_1").innerHTML = result.contact_1;
 
 // hero-section
 document.getElementById("hero_heading").innerHTML = result.hero_heading;
@@ -71,10 +71,10 @@ document.getElementById("findUs").innerHTML = result.findUs;
 document.getElementById("emailUs").innerHTML = result.emailUs;
 document.getElementById("visitSite").innerHTML = result.visitSite;
 document.getElementById("quickLinks").innerHTML = result.quickLinks;
-document.getElementById("footer_home").innerHTML = result.home;
-document.getElementById("footer_about").innerHTML = result.about;
-document.getElementById("footer_products").innerHTML = result.products;
-document.getElementById("footer_contact").innerHTML = result.contact;
+document.getElementById("home_f").innerHTML = result.home_f;
+document.getElementById("about_f").innerHTML = result.about_f;
+document.getElementById("products_f").innerHTML = result.products_f;
+document.getElementById("contact_f").innerHTML = result.contact_f;
 
 
 

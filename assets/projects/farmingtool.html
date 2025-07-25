@@ -153,65 +153,88 @@
 <body>
 
   <section class="tools-section">
-    <h1>🧰 Farming Tools</h1>
+    <h1 id="toolsTitle">🧰 Farming Tools</h1>
     <div class="tools-grid">
-
+  
       <div class="tools-card">
         <img src="https://www.deere.co.in/assets/images/region-1/products/tractors/john-deere-d-series-tractor.jpg" alt="Tractor">
         <div class="tools-card-content">
-          <h3>Tractor</h3>
-          <p>Powerful multi-purpose tractor for all types of farming tasks.</p>
-          <a href="#" class="btn">Buy Now</a>
+          <h3 id="tool1Title">Tractor</h3>
+          <p id="tool1Desc">Powerful multi-purpose tractor for all types of farming tasks.</p>
+          <a href="#" class="btn" id="tool1Btn">Buy Now</a>
         </div>
       </div>
-
+  
       <div class="tools-card">
         <img src="https://agriculturalmachinery.weebly.com/uploads/1/3/2/2/132264880/mounted-mould-board-plough_orig.png" alt="Plough">
         <div class="tools-card-content">
-          <h3>Plough</h3>
-          <p>Used for initial soil breaking to enhance crop rooting.</p>
-          <a href="#" class="btn">Buy Now</a>
+          <h3 id="tool2Title">Plough</h3>
+          <p id="tool2Desc">Used for initial soil breaking to enhance crop rooting.</p>
+          <a href="#" class="btn" id="tool2Btn">Buy Now</a>
         </div>
       </div>
-
+  
       <div class="tools-card">
         <img src="https://5.imimg.com/data5/SELLER/Default/2022/4/UT/DN/QH/3396586/harrow-8-8-disc-500x500.jpeg" alt="Harrow">
         <div class="tools-card-content">
-          <h3>Harrow</h3>
-          <p>Great for breaking clods and smoothing soil after ploughing.</p>
-          <a href="#" class="btn">Buy Now</a>
+          <h3 id="tool3Title">Harrow</h3>
+          <p id="tool3Desc">Great for breaking clods and smoothing soil after ploughing.</p>
+          <a href="#" class="btn" id="tool3Btn">Buy Now</a>
         </div>
       </div>
-
+  
       <div class="tools-card">
         <img src="https://5.imimg.com/data5/SELLER/Default/2023/12/367520014/EF/ZG/GJ/2497808/seed-planter.jpg" alt="Seed Drill">
         <div class="tools-card-content">
-          <h3>Seed Drill</h3>
-          <p>Ensures uniform seed distribution across your farmland.</p>
-          <a href="#" class="btn">Buy Now</a>
+          <h3 id="tool4Title">Seed Drill</h3>
+          <p id="tool4Desc">Ensures uniform seed distribution across your farmland.</p>
+          <a href="#" class="btn" id="tool4Btn">Buy Now</a>
         </div>
       </div>
-
+  
       <div class="tools-card">
         <img src="https://pre-live-admin.balwaan.com/uploads/media/2024/manual-sprayer-for-garden-20-liter-1.jpg" alt="Sprayer">
         <div class="tools-card-content">
-          <h3>Sprayer</h3>
-          <p>For applying fertilizers and pesticides evenly and efficiently.</p>
-          <a href="#" class="btn">Buy Now</a>
+          <h3 id="tool5Title">Sprayer</h3>
+          <p id="tool5Desc">For applying fertilizers and pesticides evenly and efficiently.</p>
+          <a href="#" class="btn" id="tool5Btn">Buy Now</a>
         </div>
       </div>
-
+  
       <div class="tools-card">
         <img src="https://media.istockphoto.com/id/1341211152/vector/garden-equipment-on-a-blue-background.jpg?s=612x612&w=0&k=20&c=7Z-KTXhpViRKYJVOnNY2ce4z9gLAZF-8TRY5mXvEwHI=" alt="Hoe">
         <div class="tools-card-content">
-          <h3>Hoe</h3>
-          <p>Simple and effective hand tool for weeding and digging.</p>
-          <a href="#" class="btn">Buy Now</a>
+          <h3 id="tool6Title">Hoe</h3>
+          <p id="tool6Desc">Simple and effective hand tool for weeding and digging.</p>
+          <a href="#" class="btn" id="tool6Btn">Buy Now</a>
         </div>
       </div>
-
+  
     </div>
   </section>
+  <script src="/assets/languages/farmingtool.js"></script>
+  
+  <script>
+    const translate = {
+      english: englishData,
+      hindi: hindiData,
+      marathi: marathiData,
+    };
+  
+    function translateLanguage() {
+      const savedLang = localStorage.getItem("lang") || "english";
+      let result = translate[savedLang];
+  
+      // 👇 Add only those elements that are on this subpage
+      document.getElementById("toolsTitle").innerHTML = result.toolsTitle;
+     
+    }
+  
+    window.onload = translateLanguage;
+  </script>
+  
 
+  
+  
 </body>
 </html>

@@ -27,11 +27,11 @@
   
       <!-- Navigation Links -->
       <ul class="nav-links">
-        <li><a href="#hero" id="home">Home</a></li>
-        <li><a href="#about" id="about">About</a></li>
-        <li><a href="#products" id="products">Products</a></li>
-        <li><a href="#services" id="services">Services</a></li>
-        <li><a href="#contact" id="contact">Contact</a></li>
+        <li><a href="#hero" id="home_1">Home</a></li>
+        <li><a href="#about" id="about_1">About</a></li>
+        <li><a href="#products" id="products_1">Products</a></li>
+        <li><a href="#services" id="services_1">Services</a></li>
+        <li><a href="#contact" id="contact_1">Contact</a></li>
       </ul>
   
       <!-- Language Selector -->
@@ -45,7 +45,7 @@
   
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-content ">
             <h2 id="hero_heading">Empowering Farmers with Modern Agriculture</h2>
             <p id="hero_paragraph">We provide high-quality seeds, fertilizers, tools & expert support to boost your farming journey.</p>
@@ -103,7 +103,7 @@
       <div class="card-content">
         <h3 id="product_1_title">🌾 Seeds</h3>
         <p id="product_1_desc">High-yield, disease-resistant certified seeds.</p>
-        <a id="view_more" href="./assets/projects/seedstype.html" class="btn">View More</a>
+        <a id="view_more"href="./assets/projects/seedstype.html" class="btn">View More</a>
       </div>
     </div>
 
@@ -113,7 +113,7 @@
       <div class="card-content">
         <h3 id="product_2_title">🧪 Organic Fertilizer</h3>
         <p id="product_2_desc">Eco-friendly fertilizers for healthy soil.</p>
-        <a id="view_more" href="./assets/projects/fertilizertype.html" class="btn">View More</a>
+        <a id="view_more"href="./assets/projects/fertilizertype.html" class="btn">View More</a>
       </div>
     </div>
 
@@ -123,7 +123,7 @@
       <div class="card-content">
         <h3 id="product_3_title">🛠️ Farming Tools</h3>
         <p id="product_3_desc">Durable, reliable tools for everyday farm work.</p>
-        <a id="view_more" href="./assets/projects/farmingtool.html" class="btn">View More</a>
+        <a id="view_more"href="./assets/projects/farmingtool.html" class="btn">View More</a>
       </div>
     </div>
 
@@ -189,11 +189,7 @@
       </ul>
     </div>
 
-  </div>
-</section>
-
-
-    <!-- Map Side -->
+  <!-- Map Side -->
     <div class="contact-map-box">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.5190665930574!2d78.58019827401068!3d20.97665268067212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd5a3db8e4f0ef5%3A0x64faad40b4f1b49!2sKatol%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1656789123456"
@@ -230,12 +226,12 @@
     
     <!-- Quick Links -->
     <div class="footer-box links-box">
-      <h4 id="footer_quick_links">Quick Links</h4>
+      <h4 id="quickLinks">Quick Links</h4>
       <ul>
-        <li><a id="footer_home" href="#hero">Home</a></li>
-        <li><a id="footer_about" href="#about">About</a></li>
-        <li><a id="footer_products" href="#products">Products</a></li>
-        <li><a id="footer_contact" href="#contact">Contact</a></li>
+        <li><a id="home2" href="#hero">Home</a></li>
+        <li><a id="about2" href="#about">About</a></li>
+        <li><a id="products2" href="#products">Products</a></li>
+        <li><a id="contact2" href="#contact">Contact</a></li>
       </ul>
     </div>
 
@@ -256,15 +252,18 @@
    };
    function translateLanguage() {
    const selectLanguage = 
-        document.getElementById("select-lang").value;
-        let result = translate[selectLanguage];
-      // header-section
+  document.getElementById("select-lang").value;
+    let result = translate[selectLanguage];
+
+
+        
+  // header-section
 document.getElementById("logo").innerHTML = result.logo;
-document.getElementById("home").innerHTML = result.home;
-document.getElementById("about").innerHTML = result.about;
-document.getElementById("products").innerHTML = result.products;
-document.getElementById("services").innerHTML = result.services;
-document.getElementById("contact").innerHTML = result.contact;
+document.getElementById("home_1").innerHTML = result.home_1;
+document.getElementById("about_1").innerHTML = result.about_1;
+document.getElementById("products_1").innerHTML = result.products_1;
+document.getElementById("services_1").innerHTML = result.services_1;
+document.getElementById("contact_1").innerHTML = result.contact_1;
 
 // hero-section
 document.getElementById("hero_heading").innerHTML = result.hero_heading;
@@ -320,17 +319,19 @@ document.getElementById("findUs").innerHTML = result.findUs;
 document.getElementById("emailUs").innerHTML = result.emailUs;
 document.getElementById("visitSite").innerHTML = result.visitSite;
 document.getElementById("quickLinks").innerHTML = result.quickLinks;
-document.getElementById("footer_home").innerHTML = result.home;
-document.getElementById("footer_about").innerHTML = result.about;
-document.getElementById("footer_products").innerHTML = result.products;
-document.getElementById("footer_contact").innerHTML = result.contact;
-
-
-
-
-    
+document.getElementById("home2").innerHTML = result.home2;
+document.getElementById("about2").innerHTML = result.about2;
+document.getElementById("products2").innerHTML = result.products2;
+document.getElementById("contact2").innerHTML = result.contact2;
 
 }
+
+// ✅ On page load, apply saved language
+window.onload = function () {
+    const savedLang = localStorage.getItem("lang") || "english";
+    document.getElementById("select-lang").value = savedLang;
+    translateLanguage();
+  };
 
 </script>
 
