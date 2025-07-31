@@ -7,9 +7,9 @@
    };
    function translateLanguage() {
    const selectLanguage = 
-        document.getElementById("select-lang").value;
-        let result = translate[selectLanguage];
-      // header-section
+    document.getElementById("select-lang").value;
+    let result = translate[selectLanguage];
+// header-section
 document.getElementById("logo").innerHTML = result.logo;
 document.getElementById("home_1").innerHTML = result.home_1;
 document.getElementById("about_1").innerHTML = result.about_1;

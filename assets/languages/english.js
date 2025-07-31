@@ -1,6 +1,6 @@
 const englishData = {
     // header-section
-    logo: "🌾Mayur <span>Agro</span> Agency",
+    logo: "Mayur <span>Agro</span> Agency",
     home_1: "Home",
     about_1: "About",
     products_1: "Products",
@@ -37,6 +37,8 @@ const englishData = {
     product_3_title: "🛠️ Farming Tools",
     product_3_desc: "Durable, reliable tools for everyday farm work.",
     view_more: "View More",
+    view1_more: "View More",
+    view2_more: "View More",
 
     // Services Section
     servicesTitle: "🌟 Our Services",
@@ -71,13 +73,70 @@ const englishData = {
     emailUs: "Email Us",
     visitSite: "Visit Our Website",
     quickLinks: "Quick Links",
-    home2: "Home",
-    about2: "About",
-    products2: "Products",
-    contact2: "Contact",
+  home_2: "Home",
+  about_2: "About",
+  products_2: "Products",
+  contact_2: "Contact",
+
+// farming tools subpages
+  toolsTitle: "🧰 Farming Tools",
+  tool1Title: "Tractor",
+  tool1Desc: "Powerful multi-purpose tractor for all types of farming tasks.",
+  tool1Btn: "Buy Now",
+  tool2Title: "Plough",
+  tool2Desc: "Used for initial soil breaking to enhance crop rooting.",
+  tool2Btn: "Buy Now",
+  tool3Title: "Harrow",
+  tool3Desc: "Great for breaking clods and smoothing soil after ploughing.",
+  tool3Btn: "Buy Now",
+  tool4Title: "Seed Drill",
+  tool4Desc: "Ensures uniform seed distribution across your farmland.",
+  tool4Btn: "Buy Now",
+  tool5Title: "Sprayer",
+  tool5Desc: "For applying fertilizers and pesticides evenly and efficiently.",
+  tool5Btn: "Buy Now",
+  tool6Title: "Hoe",
+  tool6Desc: "Simple and effective hand tool for weeding and digging.",
+  tool6Btn: "Buy Now",
   
 
-  
-    
+// fertilizer-type data
+    fertilizerTitle: "🌿 Our Fertilizer Products",
+    fert1Title: "Urea",
+    fert1Desc: "Highly concentrated nitrogen fertilizer for fast plant growth.",
+    fert1Btn: "Buy Now",
+    fert2Title: "DAP",
+    fert2Desc: "Di-Ammonium Phosphate for stronger root development.",
+    fert2Btn: "Buy Now",
+    fert3Title: "Potash",
+    fert3Desc: "Essential potassium nutrient to boost flowering & yield.",
+    fert3Btn: "Buy Now",
+    fert4Title: "Vermicompost",
+    fert4Desc: "Organic fertilizer that improves soil health & fertility.",
+    fert4Btn: "Buy Now",
+    fert5Title: "NPK Combo",
+    fert5Desc: "Balanced nutrients for all-round crop health & yield.",
+    fert5Btn: "Buy Now",
+    fert6Title: "Dry Cow Dung",
+    fert6Desc: "Natural traditional fertilizer for improving soil quality.",
+    fert6Btn: "Buy Now",
+
+// seeds-type section
+allSeedHeading: "🌱 All Available Seed Types",
+wheatHeading: "🌾 Wheat Seeds",
+wheatName1: "HD-2967",
+wheatDesc1: "High-yield wheat variety with great disease resistance.",
+wheatName2: "PBW-343",
+wheatDesc2: "Productive and adaptable wheat seed for Indian climate.",
+wheatName3: "Lok-1",
+wheatDesc3: "Early maturing wheat seed, good for dryland regions.",
+cottonHeading: "🌿 Cotton Seeds",
+cottonName1: "Bt Cotton",
+cottonDesc1: "Pest-resistant cotton variety, perfect for large farms.",
+cottonName2: "Hybrid Cotton",
+cottonDesc2: "Fast growing cotton seed for high productivity.",
+cottonName3: "Desi Cotton",
+cottonDesc3: "Traditional, drought-tolerant cotton seed for drylands.",
+buyNow: "Buy Now",
 
 }
