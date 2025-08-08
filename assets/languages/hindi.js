@@ -70,7 +70,7 @@ const hindiData = {
   findUs: "Google मैप पर देखें",
   emailUs: "हमें ईमेल करें", 
   visitSite: "हमारी वेबसाइट देखें",
-  quickLinks: "त्वरित लिंक",
+  quicksLink: "त्वरित लिंक",
   home_2: "होम",
   about_2: "हमारे बारे में",
   products_2: "उत्पाद",

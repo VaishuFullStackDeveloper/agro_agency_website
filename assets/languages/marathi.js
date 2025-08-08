@@ -70,7 +70,7 @@ const marathiData= {
      findUs: "Google नकाशावर शोधा",
      emailUs: "ईमेल करा",
      visitSite: "आमची वेबसाइट पहा",
-     quickLinks: "जलद दुवे",
+     quicksLink: "जलद दुवे",
      home_2: "मुख्यपृष्ठ",
      about_2: "आमच्याबद्दल",
      products_2: "उत्पादने",
