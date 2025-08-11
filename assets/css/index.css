@@ -132,7 +132,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 20px;
+  height: 17px;
   cursor: pointer;
   position: relative;
 }
@@ -156,6 +156,7 @@ body {
 
   .logo {
       font-size: 24px;
+     
   }
 
   .nav-toggle-label {
@@ -221,7 +222,7 @@ body {
   }
 
   .logo {
-      font-size: 20px;
+      font-size: 27px;
   }
 
   .logo::before {
@@ -229,7 +230,7 @@ body {
   }
 
   #select-lang {
-      font-size: 13px;
+      font-size: 11px;
       padding: 5px 8px;
   }
 }
@@ -244,99 +245,6 @@ body {
       transform: translateY(0);
   }
 }
-
-
-
-
-
-  /* ------------------- Responsive Styles ------------------- */
-@media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-toggle-label {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-
-  .nav-toggle-label span {
-    display: block;
-    height: 3px;
-    background: #fff;
-    border-radius: 2px;
-    transition: 0.3s;
-  }
-
-  
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #66bb6a;
-    width: 100%;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 15px;
-    text-align: center;
-    animation: fadeDown 0.4s ease-in-out forwards;
-    gap: 1px;
-  }
-
-  .nav-toggle:checked + .nav-toggle-label + .nav-links {
-    display: flex;
-  }
-
-  .nav-links li {
-    margin: 10px 0;
-  }
-
-  #select-lang {
-    margin-top: 15px;
-    width: 100%;
-    padding: 8px;
-    border-radius: 6px;
-    font-size: 25px;
-  }
-}
-
-/* Extra small devices */
-@media (max-width: 480px) {
-  .logo {
-    font-size: 22px;
-    line-height: 1.2;
-  }
-
-  .nav-links a {
-    font-size: 16px;
-  }
-
-  #select-lang {
-    font-size: 14px;
-    padding: 6px;
-  }
-}
-
-/* Optional animation */
-@keyframes fadeDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
 
 /* ---------------- HERO SECTION ---------------- */
 .hero {
@@ -629,6 +537,8 @@ body {
       border-radius: 10px;
     }
   }
+
+ 
   
 
 
