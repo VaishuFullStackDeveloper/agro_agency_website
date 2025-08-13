@@ -58,7 +58,7 @@ const hindiData = {
 
   contact_title: " हमसे संपर्क करें",
   contact_subtitle: "विशेषज्ञ कृषि सहायता के लिए हमसे मिलें या संदेश भेजें।",
-  contact_location: " खापा, कटोल के पास, नागपुर, महाराष्ट्र",
+  contact_location: " खापा, काटोल के पास, नागपुर, महाराष्ट्र",
   contact_phone: " +९१ ९८७६५ ४३२१०",
   contact_email: " mayuragro@gmail.com",
 

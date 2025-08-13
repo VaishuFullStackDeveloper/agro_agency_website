@@ -58,7 +58,7 @@ const marathiData= {
     //  contact section
      contact_title: " आमच्याशी संपर्क साधा",
      contact_subtitle: "तज्ज्ञ शेती सहाय्यासाठी भेट द्या किंवा संदेश पाठवा.",
-     contact_location: " खापा, कटोल जवळ, नागपूर, महाराष्ट्र",
+     contact_location: " खापा, काटोल जवळ, नागपूर, महाराष्ट्र",
      contact_phone: " +९१ ९८७६५ ४३२१०",
      contact_email: " mayuragro@gmail.com",
 
