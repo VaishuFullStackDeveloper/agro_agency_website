@@ -284,6 +284,7 @@ body {
 
 /* ---------------- HERO SECTION ---------------- */
 .hero {
+ 
   position: relative;
   height: 91.5vh;
   display: flex;
