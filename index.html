@@ -8,54 +8,49 @@
     <link rel="stylesheet" href="./assets/css/index.css"/>
     <link rel="stylesheet" href="../agro-agency-website/assets/languages/script.js"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 </head>
 
 <body>
 
-  <header class="header">
+<header class="header">
     <div class="container header-content">
-      <div class="logo" id="logo"> Mayur <span>Agro</span> Agency</div>
-  
-      <!-- Hamburger Menu -->
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-  
-      <!-- Navigation Links -->
-      <ul class="nav-links">
-        <li><a href="#hero" id="home_1">Home</a></li>
-        <li><a href="#about" id="about_1">About</a></li>
-        <li><a href="#products" id="products_1">Products</a></li>
-        <li><a href="#services" id="services_1">Services</a></li>
-        <li><a href="#contact" id="contact_1">Contact</a></li>
-      </ul>
-  
-      <!-- Language Selector -->
-      <select name="language" id="select-lang" onchange="translateLanguage()">
-        <option value="english">English</option>
-        <option value="hindi">हिंदी</option>
-        <option value="marathi">मराठी</option>
-      </select>
+        <div class="logo" id="logo"> Mayur <span>Agro</span> Agency</div>
+
+        <!-- Hamburger Menu -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#hero" id="home_1">Home</a></li>
+            <li><a href="#about" id="about_1">About</a></li>
+            <li><a href="#products" id="products_1">Products</a></li>
+            <li><a href="#services" id="services_1">Services</a></li>
+            <li><a href="#contact" id="contact_1">Contact</a></li>
+        </ul>
+
+        <!-- Language Selector -->
+        <select name="language" id="select-lang" onchange="translateLanguage()">
+            <option value="english">English</option>
+            <option value="hindi">हिंदी</option>
+            <option value="marathi">मराठी</option>
+        </select>
     </div>
-  </header>
-  
+</header>
 
-   <!-- Hero Section -->
+<!-- Hero Section -->
 <section class="hero" id="hero">
-  <!-- Background Video -->
-  <video autoplay muted loop playsinline class="hero-video">
-    <source src="/assets/videos/farm1v.mp4" type="video/mp4">
-   
-  </video>
+    <!-- Background Image -->
+    <div class="hero-bg"></div>
 
-  <!-- Overlay for dark effect -->
-  <div class="overlay"></div>
+    <!-- Overlay for dark effect -->
+    <div class="overlay"></div>
 
-  <!-- Hero Content -->
+     <!-- Hero Content -->
   <div class="hero-content">
     <h2 id="hero_heading">Empowering Farmers with Modern Agriculture</h2>
     <p id="hero_paragraph">We provide high-quality seeds, fertilizers, tools & expert support to boost your farming journey.</p>
