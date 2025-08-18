@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mayur Agro Agency</title>
+    <link rel="stylesheet" href="./assets/css/index.css"/>
+    <link rel="stylesheet" href="../agro-agency-website/assets/languages/script.js"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-content">
+        <div class="logo" id="logo"> Mayur <span>Agro</span> Agency</div>
+
+        <!-- Hamburger Menu -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links">
+            <li><a href="#hero" id="home_1">Home</a></li>
+            <li><a href="#about" id="about_1">About</a></li>
+            <li><a href="#products" id="products_1">Products</a></li>
+            <li><a href="#services" id="services_1">Services</a></li>
+            <li><a href="#contact" id="contact_1">Contact</a></li>
+        </ul>
+
+        <!-- Language Selector -->
+        <select name="language" id="select-lang" onchange="translateLanguage()">
+            <option value="english">English</option>
+            <option value="hindi">हिंदी</option>
+            <option value="marathi">मराठी</option>
+        </select>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="hero">
+    <!-- Background Image -->
+    <div class="hero-bg"></div>
+
+    <!-- Overlay for dark effect -->
+    <div class="overlay"></div>
+
+     <!-- Hero Content -->
+  <div class="hero-content">
+    <h2 id="hero_heading">Empowering Farmers with Modern Agriculture</h2>
+    <p id="hero_paragraph">We provide high-quality seeds, fertilizers, tools & expert support to boost your farming journey.</p>
+    <div class="hero-buttons">
+      <a href="#products" class="btn primary-btn" id="explore_products">🌾 Explore Products</a>
+      <a href="#contact" class="btn secondary-btn" id="contact_us">📞 Contact Us</a>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- About Us Section -->
+<section id="about" class="about">
+  <div class="about-container">
+
+    <!-- Left Image -->
+    <div class="about-image">
+      <img src="https://images.jdmagicbox.com/comp/guntur/x3/9999px863.x863.210624102612.z8x3/catalogue/green-yard-organic-vermicompost-amaravathi-road-guntur-vewpouojbk.jpg"
+        alt="About Mayur Agro">
+    </div>
+
+    <!-- Right Text -->
+    <div class="about-text">
+      <h2 id="title">About <span id="titleBold">Mayur Agro Agency</span></h2>
+      <p id="description">
+        We are committed to supporting every farmer with high-quality seeds, fertilizers, tools, and
+        guidance. Our goal is to bring innovation and prosperity to agriculture with trust and reliability.
+      </p>
+      <ul>
+        <li id="point1">🌱 1000+ Trusted Farmers</li>
+        <li id="point2">🚜 Premium Quality Products</li>
+        <li id="point3">⏱️ On-time Delivery Across Regions</li>
+        <li id="point4">👨‍🌾 Expert Agro Support & Guidance</li>
+      </ul>
+      <a href="#contact" class="about-btn"id="button">📞Connect With Us</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+   <!--.......... Products Section............. -->
+<section id="products" class="products">
+  <div class="section-title">
+    <h2 id="products_title">🌿 Our Agro Products</h2>
+    <p id="products_desc">Discover handpicked items tailored for modern, smart farming. Quality that grows with you.</p>
+  </div>
+
+  <div class="product-grid">
+
+    <!-- Product Card -->
+    <div class="product-card">
+      <img src="https://farmkey.in/uploads/blogs/farmer-app-814x390.jpg" alt="Wheat Seeds">
+      <div class="card-content">
+        <h3 id="product_1_title">🌾 Seeds</h3>
+        <p id="product_1_desc">High-yield, disease-resistant certified seeds.</p>
+        <a id="view_more"href="./assets/projects/seedstype.html" class="btn">View More</a>
+      </div>
+    </div>
+
+    <!-- Product Card -->
+    <div class="product-card">
+      <img src="https://eos.com/wp-content/uploads/2023/11/components-of-different-types-of-fertilizers.jpg" alt="Organic Fertilizer">
+      <div class="card-content">
+        <h3 id="product_2_title">🧪 Organic Fertilizer</h3>
+        <p id="product_2_desc">Eco-friendly fertilizers for healthy soil.</p>
+        <a id="view1_more"href="./assets/projects/fertilizertype.html" class="btn">View More</a>
+      </div>
+    </div>
+
+    <!-- Product Card -->
+    <div class="product-card">
+      <img src="https://agriculturalmachinery.weebly.com/uploads/1/3/2/2/132264880/published/farm-mechanization-1.jpg?1611397441" alt="Farming Tools">
+      <div class="card-content">
+        <h3 id="product_3_title">🛠️ Farming Tools</h3>
+        <p id="product_3_desc">Durable, reliable tools for everyday farm work.</p>
+        <a id="view2_more"href="./assets/projects/farmingtool.html" class="btn">View More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ............ Services Section ..............-->
+<section id="services" class="services">
+  <div class="services-header">
+    <h2 id="servicesTitle">🌟 Our Services</h2>
+    <p id="servicesDesc">We provide all-in-one agro solutions tailored for every farm's success.</p>
+  </div>
+
+  <div class="services-wrapper">
+
+    <!-- Card 1 -->
+    <div class="service-box">
+      <div class="icon">🧪</div>
+      <h3 id="soil">Soil Testing</h3>
+      <p id="soilDesc">Professional testing to understand your soil's health and maximize yield.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="service-box">
+      <div class="icon">🚜</div>
+      <h3 id="machinery">Machinery Rental</h3>
+      <p id="machineryDesc">Hire advanced farming tools & tractors with flexible plans and support.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="service-box">
+      <div class="icon">📦</div>
+      <h3 id="delivery">Doorstep Delivery</h3>
+      <p id="deliveryDesc">Get seeds, tools, and fertilizers delivered quickly to your doorstep.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="service-box">
+      <div class="icon">👨‍🌾</div>
+      <h3 id="consultancy">Agro Consultancy</h3>
+      <p id="consultancyDesc">Speak to our experts for crop planning, disease control, and success tips.</p>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+<!-- ..........Contact Section.............. -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2 id="contact_title">📬 Contact Us</h2>
+      <p id="contact_subtitle">Visit or message us for expert farming help.</p>
+      <ul class="contact-list">
+        <li><span>📍</span><span id="contact_location">Khapa near Katol, Nagpur, Maharashtra</span></li>
+        <li><span>📞</span><span id="contact_phone">+91 98765 43210</span></li>
+        <li><span>📧</span><span id="contact_email">mayuragro@gmail.com</span></li>
+      </ul>
+    </div>
+
+    <!-- Map -->
+    <div class="contact-map-box">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.5190665930574!2d78.58019827401068!3d20.97665268067212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd5a3db8e4f0ef5%3A0x64faad40b4f1b49!2sKatol%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1656789123456"
+        allowfullscreen="" loading="lazy" title="Mayur Agro Map">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+
+<!--  Footer Section -->
+<footer class="creative-footer">
+  <!-- Wave Shape Top -->
+  <div class="footer-wave"></div>
+
+  <!-- Footer Content -->
+  <div class="footer-content">
+    
+    <!-- Logo and Tagline -->
+    <div class="footer-box logo-box">
+      <h2 id="agencyName">🌾 Mayur Agro Agency</h2>
+      <p id="tagline">Empowering farmers with sustainable solutions.</p>
+    </div>
+
+    <!-- Social Section -->
+    <div class="footer-box social-box">
+      <h4 id="followUs">Follow Us</h4>
+      <div class="social-icons">
+        <a href="tel:+919876543210" title="Call Us"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://goo.gl/maps/example" target="_blank" title="Find Us on Google Maps"><i class="fas fa-map-marker-alt"></i></a>
+        <a href="mailto:mayuragro@gmail.com" title="Email Us"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.mayuragroagency.com" target="_blank" title="Visit Our Website"><i class="fas fa-globe"></i></a>
+      </div>
+    </div>
+    
+    <!-- Quick Links -->
+    <div class="footer-box links-box">
+      <h4 id="quicksLink">Quick Links</h4>
+      <ul>
+        <li><a id="home_2" href="#hero">Home</a></li>
+        <li><a id="about_2" href="#about">About</a></li>
+        <li><a id="products_2" href="#products">Products</a></li>
+        <li><a id="contact_2" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    
+  </div>
+</footer>
+
+    
+  </footer>
+  <script src="./assets/languages/english.js"></script>
+  <script src="./assets/languages/hindi.js"></script>
+  <script src="./assets/languages/marathi.js"></script>
+<script>
+  const translate = {
+    hindi : hindiData,
+    english : englishData,
+    marathi : marathiData
+  
+   };
+   function translateLanguage() {
+   const selectLanguage = 
+  document.getElementById("select-lang").value;
+  let result = translate[selectLanguage];
+
+
+        
+  // header-section
+document.getElementById("logo").innerHTML = result.logo;
+document.getElementById("home_1").innerHTML = result.home_1;
+document.getElementById("about_1").innerHTML = result.about_1;
+document.getElementById("products_1").innerHTML = result.products_1;
+document.getElementById("services_1").innerHTML = result.services_1;
+document.getElementById("contact_1").innerHTML = result.contact_1;
+
+// hero-section
+document.getElementById("hero_heading").innerHTML = result.hero_heading;
+document.getElementById("hero_paragraph").innerHTML = result.hero_paragraph;
+document.getElementById("explore_products").innerHTML = result.explore_products;
+document.getElementById("contact_us").innerHTML = result.contact_us;
+
+// about-section
+document.getElementById("title").innerHTML = `${result.title} <span id="titleBold">${result.titleBold}</span>`;
+document.getElementById("description").innerHTML = result.description;
+document.getElementById("point1").innerHTML = result.point1;
+document.getElementById("point2").innerHTML = result.point2;
+document.getElementById("point3").innerHTML = result.point3;
+document.getElementById("point4").innerHTML = result.point4;
+document.getElementById("button").innerHTML = result.button;
+
+// product-section
+document.getElementById("products_title").innerHTML = result.products_title;
+document.getElementById("products_desc").innerHTML = result.products_desc;
+document.getElementById("product_1_title").innerHTML = result.product_1_title;
+document.getElementById("product_1_desc").innerHTML = result.product_1_desc;
+document.getElementById("product_2_title").innerHTML = result.product_2_title;
+document.getElementById("product_2_desc").innerHTML = result.product_2_desc;
+document.getElementById("product_3_title").innerHTML = result.product_3_title;
+document.getElementById("product_3_desc").innerHTML = result.product_3_desc;
+document.getElementById("view_more").innerHTML = result.view_more;
+document.getElementById("view1_more").innerHTML = result.view1_more;
+document.getElementById("view2_more").innerHTML = result.view2_more;
+
+// services-section
+document.getElementById("servicesTitle").innerHTML = result.servicesTitle;
+document.getElementById("servicesDesc").innerHTML = result.servicesDesc;
+document.getElementById("soil").innerHTML = result.soil;
+document.getElementById("soilDesc").innerHTML = result.soilDesc;
+document.getElementById("machinery").innerHTML = result.machinery;
+document.getElementById("machineryDesc").innerHTML = result.machineryDesc;
+document.getElementById("delivery").innerHTML = result.delivery;
+document.getElementById("deliveryDesc").innerHTML = result.deliveryDesc;
+document.getElementById("consultancy").innerHTML = result.consultancy;
+document.getElementById("consultancyDesc").innerHTML = result.consultancyDesc;
+
+// contact-section
+document.getElementById("contact_title").innerHTML = result.contact_title;
+document.getElementById("contact_subtitle").innerHTML = result.contact_subtitle;
+document.getElementById("contact_location").innerHTML = result.contact_location;
+document.getElementById("contact_phone").innerHTML = result.contact_phone;
+document.getElementById("contact_email").innerHTML = result.contact_email;
+
+// footer-section
+document.getElementById("agencyName").innerHTML = result.agencyName;
+document.getElementById("tagline").innerHTML = result.tagline;
+document.getElementById("followUs").innerHTML = result.followUs;
+document.getElementById("callUs").innerHTML = result.callUs;
+document.getElementById("findUs").innerHTML = result.findUs;
+document.getElementById("emailUs").innerHTML = result.emailUs;
+document.getElementById("visitSite").innerHTML = result.visitSite;
+document.getElementById("quicksLink").innerHTML = result.quicksLink;
+document.getElementById("home_2").innerHTML = result.home_2;
+document.getElementById("about_2").innerHTML = result.about_2;
+document.getElementById("products_2").innerHTML = result.products_2;
+document.getElementById("contact_2").innerHTML = result.contact_2;
+
+}
+</script>
+
+</body>
+
+</html>
